@@ -26,5 +26,5 @@ int main () {
                         
                         cout<<endl<<endl;
                      
-   
+   *belum ada konsep pointer sepertinya
     
