@@ -92,3 +92,25 @@ int main(){
 										}
 										}
 //sudah zry kalau yang kiri dan kanan, coba kiri dan kebawah
+			
+// Horizontal Kiri <<<
+// Vertikal Kebawah +++
+				l=0;
+			for(j=0;j<=14;j++){
+			for(k=0;k<=14;k++){
+				if (findwords[l]==word[k][j])	{
+					l++;
+				}else{
+					if(word[k][j]==word[k-1][j]){
+
+					}else{
+						l=0;
+					}
+				}
+				if(l+1==nf){
+					goto selesaifor;
+				}
+										}
+										}
+
+//itu bukan, beberapa yang sy tahu kaya gitu,
