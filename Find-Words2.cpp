@@ -70,3 +70,25 @@ int main(){
 										}
 										}
 //Ok, cuma baru itu, tolong tambahin, iqbal, Rifky
+
+// Horizontal Kanan >>>
+// Horizontal Kiri <<<
+				l=0;
+			for(j=15;j>=0;j--){
+			for(k=15;k>=0;k--){
+				if (findwords[l]==word[j][k])	{
+					l++;
+				}else{
+					if(word[j][k]==word[j][k+1]){
+
+					}else{
+						l=0;
+					}
+				}
+				if(l+1==nf){
+					goto selesaifor;
+				}
+
+										}
+										}
+//sudah zry kalau yang kiri dan kanan, coba kiri dan kebawah
