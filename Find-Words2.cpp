@@ -50,3 +50,23 @@ int main(){
 			strlwr(findwords);
 			l=0;
 //dilanjutkan Rifky & Azhari sudah dirapihkan
+
+// Horizontal Kanan >>>
+			for(j=0;j<=15;j++){
+			for(k=0;k<=15;k++){
+				if (findwords[l]==word[j][k])	{
+					l++;
+				}else{
+					if(word[j][k]==word[j][k-1]){
+
+					}else{
+						l=0;
+					}
+				}
+				if(l+1==nf){
+					goto selesaifor;
+				}
+
+										}
+										}
+//Ok, cuma baru itu, tolong tambahin, iqbal, Rifky
