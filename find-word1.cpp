@@ -50,3 +50,59 @@ int main() {
         int panjang_kata = panjang[m], x=0;
         bool ada[panjang_kata], result;
 //lanjutin nanggung yang versi 2
+	    
+for(int r = 0 ; r < 15 ; r++){
+            for(int a=0; a<=(15-panjang_kata); 
+            a++) {
+                for(int b=a; b<=a+(panjang_kata-1); 
+                b++) {
+                    if(*(*(Y+r)+b) == kata[m][x]) ada[x] = 1;
+                    else ada[x] = 0;
+                    x++;
+                }
+                for(int k=0; k<panjang_kata; 
+                k++) {
+                    if(ada[k]==1) {
+                        result = 1;
+                        hasil[m]+=result;
+                    }
+                else {
+                    result = 0;
+                    break;
+                    }
+                    if(hasil[m]==panjang_kata) { 
+                        hasil_akhir[m]=1; 
+                        goto next; 
+                    }
+                }
+                hasil[m]=0;
+                x=0;
+            }
+        }
+
+        for(int c = 0 ; c < 15 ; c++){
+            for(int a=0; a<=(15-panjang_kata); a++) {
+                for(int b=a; b<=a+(panjang_kata-1); b++) {
+                    if(*(*(Y+b)+c) == kata[m][x]) ada[x] = 1;
+                    else ada[x] = 0;
+                    x++;
+                }
+                for(int k=0; k<panjang_kata; k++) {
+                    if(ada[k]==1) {
+                        result = 1;
+                        hasil[m]+=result;
+                    }
+                else {
+                result = 0;
+                    break;
+                    }
+                    if(hasil[m]==panjang_kata) { 
+                        hasil_akhir[m]=1; 
+                        goto next; 
+                    }
+                }
+                hasil[m]=0;
+                x=0;
+            }
+        }
+//kok, banyak yang sama ya Iqbal, jadi biung '?
