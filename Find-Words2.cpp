@@ -13,7 +13,7 @@ int main(){
 
 	char findwords[15],nf;
 	int j,k,l,jumlahN;
-	char word[15][15] =	{{'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
+	char word[15][15] =	               {{'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
 						{'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'},
 						{'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'},
 						{'a','s','a','g','m','q','u','w','v','v','b','s','o','h','i'},
@@ -114,3 +114,24 @@ int main(){
 										}
 
 //itu bukan, beberapa yang sy tahu kaya gitu,
+// Vertikal Kebawah +++
+
+
+		selesaifor:;
+			if(l+1==nf){
+				cout<<" Ada "<<endl<<endl;
+			}else{
+				cout<<" Tidak Ada "<<endl<<endl;
+			}
+
+		}
+
+		cout<<" Tekan 'y' Bila Ingin Mengakhiri Program, Tekan Tombol Asal Untuk Memulai Ulang Program";
+	switch (getch()){
+		case 'y': goto selesai;
+		default: goto pertama;
+	}
+selesai:;
+return 0;
+}
+//Finish,zry.rif di kosan saya hujan, kalaw nanti ke kampus bawain teh ya, tuk malam karena banyak tugas, nanti sekalian saya jadiin satu biar rapih
